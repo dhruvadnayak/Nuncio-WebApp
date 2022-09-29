@@ -1,0 +1,105 @@
+@import url('https://fonts.googlepis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+body{
+    font-family:'Poppins',sans-serif;
+    background-color: #eee;
+
+}
+.container {
+    display: flex;
+    box-shadow: 0 2px 5px 1px #26292b29;
+    height: 92px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+.container-fluid{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.container-fluid h2{
+    color: #f43648;
+    position: relative;
+    width: 23rem;
+
+}
+.container-fluid h2::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    width: 67px;
+    height: 2px;
+    background-color: #f43648;
+}
+#about {
+    text-decoration: none;
+    color: #23272a;
+    padding: 10px;
+  }
+  
+  #item1 {
+    padding-left: 20px;
+    font-size: 35px;
+    color: #23272a;
+    font-weight: 900;
+
+  }
+  #blue{
+      color: #6d8ad2;
+  }
+ 
+  #item2 {
+    color: #23272a;
+  }      
+.accordation{
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid  #03a9f4;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+
+}
+.accordation .icon{
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: url(images/toggle-bg.png) no-repeat 8px 7px  #03a9f4;
+    border-radius: 50%;
+    float:left;
+    transition: all .5s ease-in;
+   
+}
+.accordation h5{
+    font-size: 22px;
+    margin:0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color:  #03a9f4;
+    transition: all .5s ease-in;
+}
+.active .icon{
+    background: url(images/toggle-bg.png) no-repeat 8px -25px #fff;
+}
+.active{
+    background-color:  #03a9f4;
+    color: #fff;
+}
+.active h5{
+    color: #fff;
+}
+.panel{
+    padding: 0 15px;
+    border-left: 1px solid  #03a9f4;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in;
+
+}
